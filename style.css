@@ -371,10 +371,18 @@ a.active {
     flex-wrap: wrap;
 
 }
-.work_pic img{
+.work_box {
     width: 400px;
     height: auto;
 
+}
+.work_pic img{
+    width: 100%;;
+}
+
+.work_dis{
+    text-align: center;
+    
 }
 
 
