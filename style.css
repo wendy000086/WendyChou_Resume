@@ -367,6 +367,15 @@ a.active {
 #projects {
     padding: 100px 0;
 }
+#projects .works{
+    flex-wrap: wrap;
+
+}
+.work_pic img{
+    width: 400px;
+    height: auto;
+
+}
 
 
 /* contact
@@ -421,6 +430,11 @@ fieldset {
     }
     .about-img-div .img-responsiv{
         display: none;
+    }
+    .work_pic img{
+        width: 320px;
+        height: auto;
+    
     }
    
     
