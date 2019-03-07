@@ -216,6 +216,9 @@ a.active {
 #about {
     padding: 100px 0;
 }
+#about .container{
+    flex-wrap: wrap;
+}
 
 .about-img-div img {
     margin: 0 auto;
@@ -416,6 +419,10 @@ fieldset {
         width: 245px;
         
     }
+    .about-img-div .img-responsiv{
+        display: none;
+    }
+   
     
 }
 
