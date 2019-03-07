@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./normalize.css">
-    <link href="aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="img/normalize.css">
+    <link href="img/animate.min.css" rel="stylesheet">
+    <link href="img/aos.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
 
@@ -44,19 +45,19 @@
     </div>
 
     <!-- about -->
-    <div class="section" id="about">
+    <div class="section " id="about">
             <div class="container d-flex">
-                <div class="col-md-6" data-aos="fade-up">
+                <div class="col-md-6  " data-aos="fade-up">
                     <h4>01</h4>
                     <h1 class="size-50 my-3">Know <br /> About me</h1>
                     <!-- <div class="h-50"></div> -->
                     <p>大學就讀文化資訊傳播系時學習的面相比較偏重行銷面，在毫無程式背景的我在來資策會上課後學習到成為「互動式網站UI/UX設計師」需要具備的相關技能，上課的過程中也慢慢發掘我對這方面寫程式的興趣。</p>
                     <p>在半年學習過程中，慢慢覺得程式設計並非一開始想的枯燥乏味，反而是在除錯的過程充滿挑戰性和成就感。因此想投身程式設計的產業做進一步的學習和鑽研。我明白程式設計師工作很辛苦，但是我絕對擁有足夠的毅力克服一切困難和挑戰，希望您可以給我一個機會，謝謝。</p>
-                    <img class="my-3" src="img/wendy_animated.svg" width="230" alt="" />
+                    <img class="my-3" src="img/wendy_animated.svg"  width="230" alt="" />
                     <!-- <div class="h-50"></div> -->
                 </div>
-                <div class="col-md-6 about-img-div">
-                    <div class="about-border" data-aos="fade-up" data-aos-delay=".5"></div>
+                <div class="col-md-6   about-img-div ">
+                    <div class="about-border " data-aos="fade-up" data-aos-delay=".5"><img src="img/IMG_4945.png" class="img-responsive" alt=""></div>
                     <img src="img/about-img.jpg" width="400" class="img-responsive" alt="" align="right" data-aos="fade-right" data-aos-delay="0" />
                 </div>
             </div>
@@ -112,12 +113,18 @@
 
         <!-- projects -->
     <div class="section" id="projects">
-            <div class="container">
+            <div class="container ">
                 <div class="col-md-12">
                     <h4>03</h4>
                     <h1 class="size-50">My <br /> Projects</h1> 
                 </div>
                 <!-- main container -->
+            <div class="main-container portfolio-inner clearfix ">
+                
+            </div>
+            <!-- end main container -->
+        </div>
+    </div>
                 
             </div>
         </div>
@@ -133,13 +140,40 @@
                 </div>
                 <div class="col" data-aos="fade-up">
     
-                    <h3> Mobile Numberr</h3>
+                    <h3> Mobile Number</h3>
                     <p>0939-477-086</p>
                     <h3>Email</h3>
                     <p>wendychou4j@gmail.com </p>
 
             </div>
         </div>
+
+
+        <!--DEMO01-->
+    <div id="animatedModal" class="popup-modal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+        <div id="btn-close-modal" class="close-animatedModal close-popup-modal"> <i class="fas fa-times"></i> </div>
+        <div class="clearfix"></div>
+        <div class="modal-content">
+            <div class="container">
+                <div class="portfolio-padding">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h2>Geschäfts Eines<br /> Web-Studios</h2>
+                        <div class="h-50"></div>
+                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
+                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
+                        <br />
+                        <br /> <img src="img/portfolio/02.jpg" alt="" class="img-responsive" />
+                        <br />
+                        <br />
+                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value. Quickly promote premium strategic theme areas vis-a-vis.</p>
+                        <p>Appropriately maintain standards compliant total linkage with cutting-edge action items. Enthusiastically create seamless synergy rather than excellent value.</p>
+                        <br />
+                        <br /> </div>
+                </div>
+            </div>
+        </div>
+    </div>
         
 
 
@@ -151,12 +185,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
     <!--  plugins  -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/plugins.js"></script>
     <script src="js/aos.js"></script>
-    <!-- <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script> -->
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!--  main script  -->
 
 
     <script>
