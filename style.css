@@ -374,7 +374,7 @@ a.active {
 .work_box {
     width: 400px;
     height: auto;
-
+    margin: 5% 0;
 }
 .work_pic img{
     width: 100%;;
