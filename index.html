@@ -214,7 +214,7 @@
 
     <script>
         
-        $(document).ready(function () {
+    $(document).ready(function () {
     "use strict";
 
     // scroll menu
@@ -226,7 +226,7 @@
         var cur_pos = $(this).scrollTop();
 
         sections.each(function () {
-            var top = $(this).offset().top - nav_height,
+            var top = $(this).offset().top ,
                 bottom = top + $(this).outerHeight();
 
             if (cur_pos >= top && cur_pos <= bottom) {
@@ -244,7 +244,7 @@
             id = $el.attr('href');
 
         $('html, body').animate({
-            scrollTop: $(id).offset().top - nav_height + 2
+            scrollTop: $(id).offset().top  + 2
         }, 600);
 
         return false;
@@ -252,99 +252,23 @@
 
 
     // Menu opacity
-    if ($(window).scrollTop() > 80) {
-        $(".navbar-fixed-top").addClass("bg-nav");
-    } else {
-        $(".navbar-fixed-top").removeClass("bg-nav");
-    }
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 80) {
-            $(".navbar-fixed-top").addClass("bg-nav");
-        } else {
-            $(".navbar-fixed-top").removeClass("bg-nav");
-        }
-    });
+    var navTop = $(".navbar-fixed-top").offset().top;
 
-
-
-    // Parallax
-    var parallax = function () {
-        $(window).stellar();
-    };
-
-    $(function () {
-        parallax();
-    });
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop >= navTop) {
+            $(".navbar-fixed-top").addClass("bg-nav")
+            } else {
+            $(".navbar-fixed-top").removeClass("bg-nav")
+            }
+        });
 
     // AOS
     AOS.init({
         duration: 1200,
         once: true,
         disable: 'mobile'
-    });
-
-    
-    
-
-    //animatedModal
-    $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
-
-    // Contact Form 	
-
-    // validate contact form
-    $(function () {
-        $('#contact-form').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email: {
-                    required: true
-                },
-                phone: {
-                    required: false
-                },
-                message: {
-                    required: true
-                }
-
-            },
-            messages: {
-                name: {
-                    required: "This field is required",
-                    minlength: "your name must consist of at least 2 characters"
-                },
-                email: {
-                    required: "This field is required"
-                },
-                message: {
-                    required: "This field is required"
-                }
-            },
-            submitHandler: function (form) {
-                $(form).ajaxSubmit({
-                    type: "POST",
-                    data: $(form).serialize(),
-                    url: "process.php",
-                    success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $(this).find(':input').attr('disabled', 'disabled');
-                            $(this).find('label').css('cursor', 'default');
-                            $('#success').fadeIn();
-                        });
-                    },
-                    error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
-                            $('#error').fadeIn();
-                        });
-                    }
-                });
-            }
-        });
-
-    });
+    });	
 });
             </script>
 
