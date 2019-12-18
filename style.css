@@ -161,7 +161,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(img/\(1145\).jpg);
+    background: url(img/sky.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -208,6 +208,9 @@ a.active {
     margin:0 auto;
 }
 
+.lb-data .lb-close {
+    background: url(./img/close.png) top right no-repeat !important;
+}
 
 /* experience section
 ==================================================*/
